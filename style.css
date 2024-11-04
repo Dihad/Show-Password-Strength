@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: hsl(0, 0%, 8%); /* Off-black */
+}
+
+.container {
+  position: relative;
+  max-width: 460px;
+  width: 100%;
+  background: hsl(0, 0%, 15%); /* Darker-grey */
+  border-radius: 4px;
+  padding: 30px;
+  margin: 0 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container .input-box {
+  position: relative;
+}
+
+.input-box .show_hide {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: hsl(0, 1%, 44%); /* Smokey-grey */
+  padding: 5px;
+  cursor: pointer;
+}
+
+.input-box input {
+  height: 60px;
+  width: 100%;
+  border: 2px solid hsl(0, 1%, 44%); /* Smokey-grey */
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 500;
+  color: hsl(0, 0%, 94%); /* Off-white */
+  outline: none;
+  padding: 0 50px 0 16px;
+  background: hsl(0, 0%, 20%); /* Dark-grey */
+}
+
+.container .indicator {
+  display: none;
+}
+
+.container .indicator.active {
+  display: block;
+  margin-top: 14px;
+}
+
+.indicator .icon-text {
+  display: flex;
+  align-items: center;
+}
+
+.icon-text .error_icon {
+  margin-right: 8px;
+}
+
+.icon-text .text {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: hsl(0, 0%, 86%); /* Light-grey */
+}
